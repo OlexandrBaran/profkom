@@ -1,0 +1,137 @@
+
+.navbar {
+  height: 10vh;
+  background: #FDFDFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #2A418F;
+  position: sticky;
+}
+
+.navbar-logo {
+  color: #2A418F;
+  text-decoration: none;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  width: 150px;
+}
+
+.nav-items {
+  width: 65vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+
+}
+
+.nav-item {
+  list-style: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #2A418F;
+  font-size: 1.2rem;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s all ease-out;
+}
+
+.nav-item a:hover {
+  background: #2A418F;
+  color:#FAFAFC;
+}
+
+.nav-item a span {
+  margin-left: 0.7rem;
+  font-size: 1.3rem;
+}
+
+.sidebar-toggle {
+  width: 65vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-toggle-logo {
+  font-size: 2.3rem;
+  color: #2A418F;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 16rem;
+  background: #2A418F;  
+  height: 90vh;
+  position: absolute;
+  top: 10vh;
+  left: -100%;
+  transition: 0.3s all ease-in-out;
+  z-index: 1;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-items {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s all ease-out;
+}
+
+.sidebar-item {
+  list-style: none;
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: #FAFAFC;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+}
+
+.sidebar-item a span {
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+}
+
+
+
+.sidebar .btn {
+  margin-top: 2.4rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar.active {
+    width: 5rem;
+  }
+
+  .sidebar-item a span {
+    display: none;
+  }
+}
